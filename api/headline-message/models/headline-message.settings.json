@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "headline_messages",
+  "info": {
+    "name": "headline_message",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "headline_message": {
+      "type": "string"
+    },
+    "sub_headline_message": {
+      "type": "string"
+    },
+    "img_src": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/iso-services",
+      "handler": "iso-services.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/iso-services/count",
+      "handler": "iso-services.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/iso-services/:id",
+      "handler": "iso-services.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/iso-services",
+      "handler": "iso-services.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/iso-services/:id",
+      "handler": "iso-services.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/iso-services/:id",
+      "handler": "iso-services.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "collectionName": "settings",
+  "info": {
+    "name": "setting",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "location": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "copyright": {
+      "type": "string"
+    },
+    "homepage_who_we_are": {
+      "type": "richtext"
+    },
+    "homepage_what_we_do": {
+      "type": "richtext"
+    },
+    "homepage_our_services": {
+      "type": "richtext"
+    },
+    "number": {
+      "type": "json"
+    },
+    "email": {
+      "type": "json"
+    },
+    "location_long_lat": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "home_headline_message": {
+      "type": "json"
+    },
+    "we_offer_training_message": {
+      "type": "string"
+    },
+    "no_of_issued_cetifiacate": {
+      "type": "biginteger"
+    },
+    "no_of_happy_clients": {
+      "type": "biginteger"
+    },
+    "no_of_bussiness_partner": {
+      "type": "biginteger"
+    },
+    "no_of_consultant": {
+      "type": "biginteger"
+    },
+    "train_with_us_img": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "train_with_us_pdf": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
