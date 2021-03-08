@@ -67,28 +67,6 @@
     },
     "no_of_consultant": {
       "type": "biginteger"
-    },
-    "train_with_us_img": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
-    "train_with_us_pdf": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
     }
   }
 }
